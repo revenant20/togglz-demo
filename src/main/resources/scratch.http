@@ -1,0 +1,7 @@
+###
+POST http://localhost:8080/deal
+Content-Type: application/json
+
+{
+  "dealName": "test"
+}

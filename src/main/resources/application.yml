@@ -1,0 +1,16 @@
+togglz:
+  enabled: true
+  features:
+    FEATURE_ONE:
+      enabled: true
+  features-file: file:./togglz.properties
+  cache:
+    enabled: false # Enable feature state caching.
+    time-to-live: 0 # The time after which a cache entry will expire.
+    time-unit: milliseconds # The time unit as java.util.concurrent.TimeUnit enum name (one of "nanoseconds", "microseconds", "milliseconds", "seconds", "minutes", "hours", "days").
+  console:
+    enabled: true
+    path: /togglz-console
+    secured: false
+    use-management-port: false
+
