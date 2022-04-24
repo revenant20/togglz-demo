@@ -1,7 +1,7 @@
 togglz:
   enabled: true
   features:
-    DEAL_VALIDATION:
+    LOTTERY:
       enabled: true
   features-file: file:./togglz.properties
   console:
@@ -9,4 +9,3 @@ togglz:
     path: /togglz-console
     secured: false
     use-management-port: false
-

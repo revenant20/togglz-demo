@@ -1,15 +1,15 @@
 ###
-POST http://localhost:8080/deal
+POST http://localhost:8080/application
 Content-Type: application/json
 
 {
-  "dealName": "test"
+  "applicationName": "test"
 }
 
 ###
-POST http://localhost:8080/deal
+POST http://localhost:8080/application
 Content-Type: application/json
 
 {
-  "dealName": null
+  "applicationName": null
 }

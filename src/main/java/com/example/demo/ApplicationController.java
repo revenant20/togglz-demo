@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.service.DealService;
+import com.example.demo.service.ApplicationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-public class DealController {
+public class ApplicationController {
 
-    private final DealService dealService;
+    private final ApplicationService applicationService;
 
-    @PostMapping("/deal")
-    public Deal createDeal(@RequestBody DealRequest request) {
-        return dealService.createDeal(request.getDealName());
+    @PostMapping("/application")
+    public String createApplication(@RequestBody ApplicationRequest request) {
+        return applicationService.addApplication(request.getApplicationName());
     }
 }

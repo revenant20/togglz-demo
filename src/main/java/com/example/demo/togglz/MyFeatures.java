@@ -5,6 +5,6 @@ import org.togglz.core.annotation.Label;
 
 public enum MyFeatures implements Feature {
 
-    @Label("Deal validation")
-    DEAL_VALIDATION
+    @Label("Lottery")
+    LOTTERY
 }

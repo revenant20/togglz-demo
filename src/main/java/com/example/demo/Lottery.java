@@ -5,6 +5,6 @@ import lombok.Value;
 
 @Value
 @Builder
-public class Deal {
-    String dealName;
+public class Lottery {
+    String id;
 }
