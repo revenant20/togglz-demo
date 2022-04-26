@@ -18,10 +18,10 @@ public class ApplicationServiceImpl implements ApplicationService {
     private final LotteryService service;
 
     @Override
-    public String addApplication(String dealName) {
+    public String addApplication(String applicationName) {
         Application application = Application.builder()
                 .id(UUID.randomUUID().toString())
-                .name(dealName)
+                .name(applicationName)
                 .build();
         if (manager.isActive(MyFeatures.LOTTERY)) {
             service.addToLottery(application);
